@@ -16,9 +16,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: "Funcionalidades", href: "#beneficios" },
-    { label: "Plataforma", href: "#demo" },
-    { label: "Planes", href: "#planes" },
+    { label: "Funcionalidades", href: "/#beneficios" },
+    { label: "Plataforma", href: "/#demo" },
+    { label: "Planes", href: "/#planes" },
+    { label: "Blog", href: "/blog" },
   ];
 
   return (
