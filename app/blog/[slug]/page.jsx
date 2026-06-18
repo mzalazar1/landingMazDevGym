@@ -32,15 +32,17 @@ export default function BlogArticle({ params }) {
       {/* Header del artículo */}
       <header className="bg-gradient-to-br from-gray-950 via-blue-950 to-gray-900 pt-28 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-2 text-sm text-blue-300 hover:text-blue-200 transition-colors mb-8"
-          >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-            Volver al blog
-          </Link>
+          <div className="mb-8">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 text-sm text-blue-300 hover:text-blue-200 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+              Volver al blog
+            </Link>
+          </div>
 
           <span className="inline-block text-xs font-semibold text-blue-300 bg-blue-500/10 border border-blue-400/20 rounded-full px-3 py-1 mb-5">
             {post.category}
