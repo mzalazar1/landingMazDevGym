@@ -1,7 +1,7 @@
 "use client";
 
 const WA_URL =
-  "https://wa.me/5493417409383?text=Hola%2C%20me%20interesa%20conocer%20GymFlowPro";
+  "https://wa.me/5493417409383?text=Hola%2C%20me%20interesa%20conocer%20GymMAZDev";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -50,7 +50,7 @@ export default function Footer() {
                 { label: "Planes y precios", href: "#planes" },
                 {
                   label: "Prueba gratuita",
-                  href: "https://www.gymflowpro.com/form",
+                  href: "https://www.gymmazdev.com/form",
                 },
               ].map((l) => (
                 <li key={l.label}>
@@ -71,7 +71,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <a
-                  href="mailto:info@gymflowpro.com"
+                  href="mailto:info@gymmazdev.com"
                   className="flex items-center gap-2 hover:text-white transition-colors"
                 >
                   <svg
@@ -87,7 +87,7 @@ export default function Footer() {
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  info@gymflowpro.com
+                  info@gymmazdev.com
                 </a>
               </li>
               <li>
@@ -156,7 +156,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
-          <span>© {year} GymFlowPro. Todos los derechos reservados.</span>
+          <span>© {year} GymMAZDev. Todos los derechos reservados.</span>
           <div className="flex gap-5">
             <a href="#" className="hover:text-gray-400 transition-colors">
               Términos y condiciones

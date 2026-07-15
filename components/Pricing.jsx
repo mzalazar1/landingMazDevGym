@@ -21,7 +21,11 @@ const plans = [
     price: "$40.000",
     period: "por mes",
     description: "Ideal para empezar sin compromisos.",
-    features: ["Todas las funcionalidades", "Actualizaciones incluidas", "Soporte personalizado"],
+    features: [
+      "Todas las funcionalidades",
+      "Actualizaciones incluidas",
+      "Soporte personalizado",
+    ],
     cta: "Solicitar prueba gratuita",
     highlighted: false,
   },
@@ -151,7 +155,11 @@ export default function Pricing() {
                           stroke="currentColor"
                           strokeWidth={2.5}
                         >
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                       ) : (
                         <CheckIcon />
@@ -169,7 +177,7 @@ export default function Pricing() {
 
                 {/* CTA */}
                 <a
-                  href="https://www.gymflowpro.com/form"
+                  href="https://www.gymmazdev.com/form"
                   className={`block text-center py-3.5 px-6 rounded-xl font-semibold text-sm transition-all duration-200 ${
                     plan.highlighted
                       ? "bg-white text-blue-700 hover:bg-blue-50 shadow-lg"

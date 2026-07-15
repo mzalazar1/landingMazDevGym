@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "GymFlowPro | Software de Gestión para Gimnasios en Argentina",
+  title: "GymMAZDev | Software de Gestión para Gimnasios en Argentina",
   description:
     "Gestioná socios, pagos, turnos, stock, clases y reportes desde una única plataforma. 30 días de prueba gratuita.",
   icons: {

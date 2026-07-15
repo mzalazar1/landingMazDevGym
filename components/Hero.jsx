@@ -1,13 +1,16 @@
 "use client";
 
 const WA_URL =
-  "https://wa.me/5493417409383?text=Hola%2C%20me%20interesa%20conocer%20GymFlowPro";
+  "https://wa.me/5493417409383?text=Hola%2C%20me%20interesa%20conocer%20GymMAZDev";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-gray-950 via-blue-950 to-gray-900">
       {/* Geometric background decorations */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+      <div
+        className="absolute inset-0 overflow-hidden pointer-events-none"
+        aria-hidden="true"
+      >
         {/* Grid pattern */}
         <div
           className="absolute inset-0 opacity-[0.03]"
@@ -48,8 +51,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg sm:text-xl text-blue-100/70 mb-10 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Gestioná socios, pagos, turnos, stock, clases y reportes desde
-              una{" "}
+              Gestioná socios, pagos, turnos, stock, clases y reportes desde una{" "}
               <strong className="text-blue-200 font-semibold">
                 única plataforma
               </strong>
@@ -88,7 +90,7 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
               <a
-                href="https://www.gymflowpro.com/form"
+                href="https://www.gymmazdev.com/form"
                 className="btn-primary text-base px-8 py-4 shadow-2xl shadow-blue-500/40"
               >
                 <svg
@@ -136,17 +138,39 @@ export default function Hero() {
                   <div className="w-3 h-3 rounded-full bg-yellow-500/70" />
                   <div className="w-3 h-3 rounded-full bg-green-500/70" />
                   <div className="flex-1 mx-4 bg-white/5 rounded-md h-5 flex items-center px-3">
-                    <span className="text-xs text-white/30">gymflowpro.com/dashboard</span>
+                    <span className="text-xs text-white/30">
+                      gymmazdev.com/dashboard
+                    </span>
                   </div>
                 </div>
                 <div className="p-5">
                   {/* Stats row */}
                   <div className="grid grid-cols-2 gap-3 mb-4">
                     {[
-                      { label: "Socios activos", value: "247", icon: "👥", trend: "+12%" },
-                      { label: "Ingresos del mes", value: "$842K", icon: "💰", trend: "+8%" },
-                      { label: "Asistencias hoy", value: "63", icon: "✅", trend: "+5%" },
-                      { label: "Ventas realizadas", value: "31", icon: "🛒", trend: "+18%" },
+                      {
+                        label: "Socios activos",
+                        value: "247",
+                        icon: "👥",
+                        trend: "+12%",
+                      },
+                      {
+                        label: "Ingresos del mes",
+                        value: "$842K",
+                        icon: "💰",
+                        trend: "+8%",
+                      },
+                      {
+                        label: "Asistencias hoy",
+                        value: "63",
+                        icon: "✅",
+                        trend: "+5%",
+                      },
+                      {
+                        label: "Ventas realizadas",
+                        value: "31",
+                        icon: "🛒",
+                        trend: "+18%",
+                      },
                     ].map((stat) => (
                       <div
                         key={stat.label}
@@ -154,22 +178,35 @@ export default function Hero() {
                       >
                         <div className="flex items-start justify-between mb-1">
                           <span className="text-base">{stat.icon}</span>
-                          <span className="text-xs text-green-400 font-medium">{stat.trend}</span>
+                          <span className="text-xs text-green-400 font-medium">
+                            {stat.trend}
+                          </span>
                         </div>
-                        <div className="text-xl font-bold text-white">{stat.value}</div>
-                        <div className="text-xs text-white/40 mt-0.5">{stat.label}</div>
+                        <div className="text-xl font-bold text-white">
+                          {stat.value}
+                        </div>
+                        <div className="text-xs text-white/40 mt-0.5">
+                          {stat.label}
+                        </div>
                       </div>
                     ))}
                   </div>
                   {/* Mini chart placeholder */}
                   <div className="bg-white/5 border border-white/10 rounded-xl p-4">
                     <div className="flex items-center justify-between mb-3">
-                      <span className="text-xs text-white/60 font-medium">Asistencias · últimos 7 días</span>
-                      <span className="text-xs text-blue-400">Ver reporte →</span>
+                      <span className="text-xs text-white/60 font-medium">
+                        Asistencias · últimos 7 días
+                      </span>
+                      <span className="text-xs text-blue-400">
+                        Ver reporte →
+                      </span>
                     </div>
                     <div className="flex items-end gap-1.5 h-16">
                       {[40, 65, 45, 80, 55, 70, 90].map((h, i) => (
-                        <div key={i} className="flex-1 flex flex-col justify-end">
+                        <div
+                          key={i}
+                          className="flex-1 flex flex-col justify-end"
+                        >
                           <div
                             className="rounded-t-sm bg-gradient-to-t from-blue-600 to-blue-400 opacity-80"
                             style={{ height: `${h}%` }}
@@ -179,14 +216,21 @@ export default function Hero() {
                     </div>
                     <div className="flex justify-between mt-1">
                       {["L", "M", "X", "J", "V", "S", "D"].map((d) => (
-                        <span key={d} className="flex-1 text-center text-xs text-white/20">{d}</span>
+                        <span
+                          key={d}
+                          className="flex-1 text-center text-xs text-white/20"
+                        >
+                          {d}
+                        </span>
                       ))}
                     </div>
                   </div>
                   {/* Notifications strip */}
                   <div className="mt-3 flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-lg px-3 py-2">
                     <span className="text-green-400 text-sm">📲</span>
-                    <span className="text-xs text-green-300">3 socios notificados por vencimiento de cuota</span>
+                    <span className="text-xs text-green-300">
+                      3 socios notificados por vencimiento de cuota
+                    </span>
                   </div>
                 </div>
               </div>
@@ -197,11 +241,12 @@ export default function Hero() {
 
       {/* Bottom wave */}
       <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M0 40C360 80 1080 0 1440 40V80H0V40Z"
-            fill="white"
-          />
+        <svg
+          viewBox="0 0 1440 80"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 40C360 80 1080 0 1440 40V80H0V40Z" fill="white" />
         </svg>
       </div>
     </section>

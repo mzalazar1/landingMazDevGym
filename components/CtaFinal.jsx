@@ -1,7 +1,7 @@
 "use client";
 
 const WA_URL =
-  "https://wa.me/5493417409383?text=Hola%2C%20me%20interesa%20conocer%20GymFlowPro";
+  "https://wa.me/5493417409383?text=Hola%2C%20me%20interesa%20conocer%20GymMAZDev";
 
 export default function CtaFinal() {
   return (
@@ -28,7 +28,7 @@ export default function CtaFinal() {
         </div>
 
         <h2 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
-          Probá GymFlowPro gratis{" "}
+          Probá GymMAZDev gratis{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-cyan-300">
             durante 30 días
           </span>
@@ -41,7 +41,7 @@ export default function CtaFinal() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://www.gymflowpro.com/form"
+            href="https://www.gymmazdev.com/form"
             className="btn-primary text-base px-8 py-4 shadow-2xl shadow-blue-500/40 text-lg"
           >
             <svg
@@ -51,7 +51,11 @@ export default function CtaFinal() {
               stroke="currentColor"
               strokeWidth={2}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              />
             </svg>
             Solicitar prueba gratuita
           </a>
@@ -67,7 +71,8 @@ export default function CtaFinal() {
         </div>
 
         <p className="mt-8 text-sm text-blue-100/30">
-          Sin tarjeta de crédito · Configuración en minutos · Cancelá cuando quieras
+          Sin tarjeta de crédito · Configuración en minutos · Cancelá cuando
+          quieras
         </p>
       </div>
     </section>

@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
   if (!post) return {};
 
   return {
-    title: `${post.title} | GymFlowPro`,
+    title: `${post.title} | GymMAZDev`,
     description: post.excerpt,
     openGraph: {
       title: post.title,
@@ -67,7 +67,7 @@ export default function BlogArticle({ params }) {
           </p>
 
           <div className="flex items-center gap-3 mt-6 text-sm text-blue-200/50">
-            <span>GymFlowPro</span>
+            <span>GymMAZDev</span>
             <span>·</span>
             <span>{post.readTime}</span>
           </div>
@@ -133,14 +133,14 @@ export default function BlogArticle({ params }) {
         {/* CTA final */}
         <div className="bg-gradient-to-br from-blue-700 to-blue-900 rounded-2xl p-8 mt-12 text-center">
           <h3 className="text-xl font-bold text-white mb-2">
-            Probá GymFlowPro gratis durante 30 días
+            Probá GymMAZDev gratis durante 30 días
           </h3>
           <p className="text-blue-100/80 text-sm mb-6 max-w-md mx-auto">
             Automatizá la gestión de tu gimnasio y dedicá más tiempo a hacer
             crecer tu negocio.
           </p>
           <a
-            href="https://www.gymflowpro.com/form"
+            href="https://www.gymmazdev.com/form"
             className="inline-flex items-center justify-center gap-2 bg-white text-blue-700 hover:bg-blue-50 font-semibold text-sm px-6 py-3 rounded-xl transition-colors shadow-lg"
           >
             Solicitar prueba gratuita

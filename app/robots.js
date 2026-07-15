@@ -5,6 +5,6 @@ export default function robots() {
       allow: "/",
       disallow: [],
     },
-    sitemap: "https://www.gymflowpro.online/sitemap.xml",
+    sitemap: "https://www.gymmazdev.online/sitemap.xml",
   };
 }

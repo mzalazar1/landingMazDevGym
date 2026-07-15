@@ -3,7 +3,7 @@ import Link from "next/link";
 import { posts } from "@/app/blog/data/posts";
 
 export const metadata = {
-  title: "Blog | GymFlowPro — Consejos para gestionar tu gimnasio",
+  title: "Blog | GymMAZDev — Consejos para gestionar tu gimnasio",
   description:
     "Guías y consejos prácticos sobre gestión de gimnasios: cobros, automatización, control de acceso y más, escritos para dueños de gimnasios en Argentina.",
 };
@@ -19,8 +19,18 @@ export default function BlogIndex() {
               href="/"
               className="inline-flex items-center gap-2 text-sm text-blue-300 hover:text-blue-200 transition-colors"
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15 19l-7-7 7-7"
+                />
               </svg>
               Volver al inicio
             </Link>

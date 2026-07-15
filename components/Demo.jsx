@@ -2,8 +2,18 @@
 
 const stats = [
   { label: "Socios activos", value: "247", icon: "👥", color: "blue" },
-  { label: "Ingresos mensuales", value: "$842.000", icon: "💰", color: "green" },
-  { label: "Asistencias registradas", value: "1.842", icon: "✅", color: "purple" },
+  {
+    label: "Ingresos mensuales",
+    value: "$842.000",
+    icon: "💰",
+    color: "green",
+  },
+  {
+    label: "Asistencias registradas",
+    value: "1.842",
+    icon: "✅",
+    color: "purple",
+  },
   { label: "Ventas realizadas", value: "312", icon: "🛒", color: "orange" },
 ];
 
@@ -51,11 +61,23 @@ export default function Demo() {
               <div className="bg-gray-900 px-5 py-3 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="w-7 h-7 bg-blue-600 rounded-lg flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    <svg
+                      className="w-4 h-4 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2.2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
                     </svg>
                   </div>
-                  <span className="text-sm font-semibold text-white">GymFlowPro</span>
+                  <span className="text-sm font-semibold text-white">
+                    GymMAZDev
+                  </span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-gray-400">
                   <span className="w-2 h-2 rounded-full bg-green-400" />
@@ -67,7 +89,7 @@ export default function Demo() {
               <div className="flex">
                 {/* Mini sidebar */}
                 <div className="hidden sm:flex flex-col gap-1 bg-gray-50 border-r border-gray-100 p-3 w-14">
-                  {["🏠","👥","💰","📅","📊","⚙️"].map((icon, i) => (
+                  {["🏠", "👥", "💰", "📅", "📊", "⚙️"].map((icon, i) => (
                     <div
                       key={i}
                       className={`w-8 h-8 rounded-lg flex items-center justify-center text-base cursor-pointer transition-colors ${
@@ -85,8 +107,12 @@ export default function Demo() {
                 <div className="flex-1 p-5">
                   <div className="flex items-center justify-between mb-4">
                     <div>
-                      <h3 className="font-bold text-gray-900 text-sm">Dashboard</h3>
-                      <p className="text-xs text-gray-400">Resumen del mes actual</p>
+                      <h3 className="font-bold text-gray-900 text-sm">
+                        Dashboard
+                      </h3>
+                      <p className="text-xs text-gray-400">
+                        Resumen del mes actual
+                      </p>
                     </div>
                     <span className="text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-full font-medium">
                       Junio 2025
@@ -102,7 +128,9 @@ export default function Demo() {
                       >
                         <div className="text-base mb-1">{s.icon}</div>
                         <div className="text-lg font-bold">{s.value}</div>
-                        <div className="text-xs opacity-70 mt-0.5">{s.label}</div>
+                        <div className="text-xs opacity-70 mt-0.5">
+                          {s.label}
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -110,12 +138,19 @@ export default function Demo() {
                   {/* Chart */}
                   <div className="bg-gray-50 border border-gray-100 rounded-xl p-4">
                     <div className="flex items-center justify-between mb-3">
-                      <span className="text-xs font-semibold text-gray-700">Ingresos semanales</span>
-                      <span className="text-xs text-green-500 font-medium">+12% vs mes anterior</span>
+                      <span className="text-xs font-semibold text-gray-700">
+                        Ingresos semanales
+                      </span>
+                      <span className="text-xs text-green-500 font-medium">
+                        +12% vs mes anterior
+                      </span>
                     </div>
                     <div className="flex items-end gap-2 h-14">
                       {[55, 75, 60, 90, 70, 85, 95].map((h, i) => (
-                        <div key={i} className="flex-1 flex flex-col justify-end rounded overflow-hidden">
+                        <div
+                          key={i}
+                          className="flex-1 flex flex-col justify-end rounded overflow-hidden"
+                        >
                           <div
                             className="rounded-t bg-gradient-to-t from-blue-700 to-blue-400"
                             style={{ height: `${h}%` }}
@@ -128,7 +163,9 @@ export default function Demo() {
                   {/* Alert strip */}
                   <div className="mt-3 flex items-center gap-2 text-xs bg-amber-50 border border-amber-200 rounded-lg px-3 py-2 text-amber-700">
                     <span>⚠️</span>
-                    <span>5 socios con cuota a vencer en los próximos 3 días</span>
+                    <span>
+                      5 socios con cuota a vencer en los próximos 3 días
+                    </span>
                   </div>
                 </div>
               </div>
@@ -142,7 +179,8 @@ export default function Demo() {
             </h3>
             <p className="text-gray-500 mb-8 leading-relaxed">
               Cada funcionalidad fue pensada para resolver los problemas reales
-              de la administración de un gimnasio, sin complejidades innecesarias.
+              de la administración de un gimnasio, sin complejidades
+              innecesarias.
             </p>
 
             <div className="space-y-4">
@@ -154,7 +192,9 @@ export default function Demo() {
                   <div className="w-10 h-10 bg-gray-50 rounded-xl flex items-center justify-center text-xl flex-shrink-0">
                     {f.icon}
                   </div>
-                  <span className="text-gray-700 font-medium text-sm">{f.text}</span>
+                  <span className="text-gray-700 font-medium text-sm">
+                    {f.text}
+                  </span>
                   <svg
                     className="w-4 h-4 text-gray-300 ml-auto flex-shrink-0"
                     fill="none"
@@ -162,7 +202,11 @@ export default function Demo() {
                     stroke="currentColor"
                     strokeWidth={2}
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 5l7 7-7 7"
+                    />
                   </svg>
                 </div>
               ))}
