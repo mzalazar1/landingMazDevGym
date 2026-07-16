@@ -54,7 +54,7 @@ export default function Navbar() {
                 scrolled ? "text-gray-900" : "text-white"
               }`}
             >
-              GymFlow<span className="text-blue-400">Pro</span>
+              GymMAZ<span className="text-blue-400">Dev</span>
             </span>
           </div>
 

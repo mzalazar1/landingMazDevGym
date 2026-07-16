@@ -29,7 +29,7 @@ export default function Footer() {
                 </svg>
               </div>
               <span className="text-lg font-bold text-white">
-                GymFlow<span className="text-blue-400">Pro</span>
+                GymMAZ<span className="text-blue-400">Dev</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed text-gray-500">
